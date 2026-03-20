@@ -119,7 +119,9 @@ main {
 .brand-lockup h1,
 .hero-copy h2,
 .section-heading h3,
-.experience-strip h3 {
+.experience-strip h3,
+.portfolio-card strong,
+.roadmap-card strong {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
   letter-spacing: -0.04em;
@@ -148,6 +150,11 @@ main {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.small-eyebrow {
+  margin-bottom: 6px;
+  font-size: 0.72rem;
 }
 
 .topnav,
@@ -238,7 +245,8 @@ main {
 .spotlight-section,
 .premium-section,
 .experience-strip,
-.roadmap-section {
+.roadmap-section,
+.portfolio-section {
   border: 1px solid var(--border);
   background: rgba(9, 12, 18, 0.82);
   box-shadow: var(--shadow);
@@ -382,14 +390,16 @@ main {
 .spotlight-section,
 .premium-section,
 .experience-strip,
-.roadmap-section {
+.roadmap-section,
+.portfolio-section {
   margin-top: 28px;
   padding: 28px;
   border-radius: 32px;
 }
 
 .spotlight-grid,
-.premium-grid {
+.premium-grid,
+.portfolio-grid {
   display: grid;
   gap: 18px;
 }
@@ -399,7 +409,8 @@ main {
 }
 
 .spotlight-card,
-.premium-card {
+.premium-card,
+.portfolio-card {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 26px;
   background: rgba(255, 255, 255, 0.04);
@@ -435,6 +446,27 @@ main {
   flex-direction: column;
   gap: 16px;
   padding: 24px;
+}
+
+.portfolio-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.portfolio-card {
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+}
+
+.portfolio-card span {
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.portfolio-card strong {
+  font-size: 1.3rem;
 }
 
 .premium-card h4 {
@@ -693,6 +725,19 @@ main {
   padding: 18px;
 }
 
+.roadmap-card div {
+  display: grid;
+  gap: 6px;
+}
+
+.roadmap-card strong {
+  font-size: 1.2rem;
+}
+
+.roadmap-card p {
+  margin: 0;
+}
+
 .roadmap-dot {
   width: 12px;
   height: 12px;
@@ -708,6 +753,7 @@ main {
   .premium-grid,
   .experience-strip,
   .login-layout,
+  .portfolio-grid,
   .playlist-grid,
   .roadmap-grid {
     grid-template-columns: 1fr;
@@ -738,6 +784,7 @@ main {
   .premium-section,
   .experience-strip,
   .roadmap-section,
+  .portfolio-section,
   .login-hero,
   .login-panel {
     padding: 20px;

@@ -1,6 +1,6 @@
 # Pulse Clone
 
-Pulse is a React project inspired by Spotify-style landing pages and premium conversion flows. It now includes a stronger Spotify-like home experience plus a dedicated login page, while keeping the assets original.
+Pulse is a frontend case study inspired by premium music product experiences. The goal was to build a sharable concept that feels presentable in a portfolio review: strong visual hierarchy, clear conversion flow, and enough interaction design to discuss implementation choices with confidence.
 
 ## Live demo
 
@@ -8,10 +8,24 @@ https://alessandra60.github.io/pulse-clone/
 
 ## What is inside
 
-- `src/App.tsx`: the main Spotify-inspired landing page
-- `src/styles.css`: the visual system, layout and responsive behaviour for both routes
+- `src/App.tsx`: landing and sign-in routes framed as one product concept
+- `src/styles.css`: visual system, responsive layout and portfolio-facing presentation
 - `src/main.tsx`: application entry point
 - `vite.config.ts`: Vite setup for local development and static publishing
+
+## Case study framing
+
+- Product type: premium music acquisition experience
+- Scope: responsive landing page plus sign-in handoff
+- Focus: visual hierarchy, product storytelling and interaction polish
+- Stack: React, TypeScript, Vite, React Router
+
+## Highlights
+
+- Searchable playlist shelf with live hero state updates
+- Pricing section designed as part of the conversion story
+- Dedicated sign-in page to make the project read like a real product flow
+- Public GitHub Pages deployment for easy sharing
 
 ## Available commands
 
@@ -25,7 +39,7 @@ https://alessandra60.github.io/pulse-clone/
 - `/#/`: premium-style landing page
 - `/#/login`: dedicated login page
 
-## Good next improvements
+## Possible next iterations
 
 1. Add form validation and error states to the login page.
 2. Add scroll-triggered motion.

@@ -72,42 +72,70 @@ const playlists: Playlist[] = [
   },
 ];
 
-const milestones = [
-  "Day 1: refine the premium banner copy and spacing.",
-  "Day 2: add mobile navigation behaviour and menu transitions.",
-  "Day 3: create a playlist details side panel.",
-  "Day 4: animate card reveals on scroll.",
-  "Day 5: improve keyboard navigation across chips and CTAs.",
-  "Day 6: add validation states to the login page.",
-  "Day 7: add theme toggles for alternate art direction.",
-  "Day 8: create a testimonials carousel.",
-  "Day 9: expand the premium plan comparison.",
-  "Day 10: connect a simple mock API for tracks.",
-  "Day 11: add loading skeletons for playlist cards.",
-  "Day 12: improve accessibility labels and focus states.",
-  "Day 13: polish footer layout and social links.",
-  "Day 14: review performance and image-free rendering quality.",
-];
-
 const stats = [
-  { value: "82M+", label: "listeners moving between work and play" },
-  { value: "4.9/5", label: "average rating for curated moods" },
-  { value: "12", label: "editorial scenes refreshed each week" },
+  {
+    value: "2 routes",
+    label: "home and sign-in views built as one product flow",
+  },
+  {
+    value: "6 states",
+    label: "interactive playlist cards that change the hero player",
+  },
+  {
+    value: "1 week",
+    label: "scope framed like a compact portfolio case study",
+  },
 ];
 
 const spotlightRows = [
   {
-    title: "Made for focus-heavy mornings",
-    text: "Algorithmic mixes, editorial playlists and zero-friction playback cues.",
+    title: "Product framing before decoration",
+    text: "The page was reshaped around premium conversion, not just visual mimicry, so the layout reads like a deliberate product concept.",
   },
   {
-    title: "Premium energy without the default template",
-    text: "Bright contrast, editorial typography and sections that feel product-led.",
+    title: "A cleaner portfolio narrative",
+    text: "The experience now highlights role, challenge and interface decisions to feel more like a credible case study than a generic clone.",
   },
   {
-    title: "A second page for login and conversion flow",
-    text: "The app now includes a dedicated authentication-style route instead of only one landing view.",
+    title: "A realistic product journey",
+    text: "The second route turns the piece into a believable acquisition flow by connecting a premium landing page to a dedicated sign-in experience.",
   },
+];
+
+const caseStudyBlocks = [
+  {
+    eyebrow: "Role",
+    title: "Product-minded frontend concept",
+    text: "Designed and implemented as a React case study focused on premium storytelling, interaction polish and a stronger portfolio narrative.",
+  },
+  {
+    eyebrow: "Challenge",
+    title: "Make the project feel intentional",
+    text: "The goal was to avoid a shallow page clone and instead build something that looks presentable to recruiters or clients as a compact product exploration.",
+  },
+  {
+    eyebrow: "Approach",
+    title: "Editorial layout with interactive proof",
+    text: "The solution combines a high-contrast hero, searchable playlist modules, plan comparison, and a branded sign-in screen to suggest a real conversion funnel.",
+  },
+  {
+    eyebrow: "Outcome",
+    title: "Sharable portfolio-ready demo",
+    text: "The final build is structured to read well in GitHub, render cleanly on GitHub Pages, and communicate product thinking beyond surface styling.",
+  },
+];
+
+const proofPoints = [
+  "Interactive filtering and player state on the landing page",
+  "Separate sign-in route to support a realistic acquisition flow",
+  "Responsive layout designed to hold up in a shared public demo",
+];
+
+const portfolioFacts = [
+  { label: "Timeline", value: "Concept sprint" },
+  { label: "Focus", value: "Premium conversion UX" },
+  { label: "Stack", value: "React, TypeScript, Vite" },
+  { label: "Type", value: "Frontend case study" },
 ];
 
 const plans = [
@@ -178,7 +206,7 @@ function HomePage() {
             P
           </div>
           <div>
-            <p className="eyebrow">Spotify-inspired React project</p>
+            <p className="eyebrow">Frontend case study</p>
             <h1>Pulse</h1>
           </div>
         </div>
@@ -193,8 +221,8 @@ function HomePage() {
           <a className="nav-link" href="#premium">
             Premium
           </a>
-          <a className="nav-link" href="#roadmap">
-            Roadmap
+          <a className="nav-link" href="#case-study">
+            Case study
           </a>
         </nav>
 
@@ -211,16 +239,16 @@ function HomePage() {
       <main>
         <section className="hero-grid" id="discover">
           <div className="hero-copy">
-            <p className="eyebrow">
-              Premium music, cloned as a React experience
-            </p>
+            <p className="eyebrow">Streaming-inspired acquisition experience</p>
             <h2>
-              Turn a Spotify-style premium pitch into a two-page product demo.
+              A portfolio-ready premium music concept built to feel like a real
+              product pitch.
             </h2>
             <p className="hero-text">
-              The home page now leans closer to Spotify Premium storytelling:
-              stronger call-to-action hierarchy, plan framing, curated playlists
-              and a direct path into a dedicated login route.
+              Pulse reframes a streaming-inspired interface as a compact case
+              study: stronger CTA hierarchy, searchable content modules, premium
+              plan framing and a dedicated sign-in route that creates a
+              believable product journey instead of a single static page.
             </p>
 
             <div className="hero-actions">
@@ -244,8 +272,8 @@ function HomePage() {
 
           <aside className="hero-panel" aria-label="Featured playlist">
             <div className="panel-header">
-              <span>Now playing</span>
-              <span className="live-pill">Premium mix</span>
+              <span>Featured interaction</span>
+              <span className="live-pill">Live state</span>
             </div>
 
             <div className={`cover-art ${playingNow.accentClass}`}>
@@ -302,7 +330,7 @@ function HomePage() {
             <div>
               <p className="eyebrow">Curated shelves</p>
               <h3 id="playlist-heading">
-                Browse the moods that sell the premium story.
+                Browse the content layer that supports the premium story.
               </h3>
             </div>
 
@@ -370,7 +398,7 @@ function HomePage() {
             <div>
               <p className="eyebrow">Premium plans</p>
               <h3>
-                Closer to a Spotify Premium pitch, without copying assets.
+                Pricing blocks designed to feel product-led, not decorative.
               </h3>
             </div>
             <Link className="ghost-button" to="/login">
@@ -394,35 +422,60 @@ function HomePage() {
 
         <section className="experience-strip">
           <article>
-            <p className="eyebrow">Why this clone works</p>
-            <h3>It feels like a product flow now, not only a hero mockup.</h3>
+            <p className="eyebrow">Execution notes</p>
+            <h3>What makes the piece feel stronger in a portfolio review.</h3>
             <p>
-              The app now has a conversion path: a premium-oriented landing
-              page, plan cards and a standalone login route that gives the
-              project a more credible Spotify-style journey.
+              Instead of stopping at visual imitation, the experience shows
+              product thinking: a clear content hierarchy, a conversion path,
+              stateful UI behaviour and enough surface area to discuss design
+              and implementation decisions in an interview.
             </p>
           </article>
 
           <ul>
-            <li>Home route focused on premium storytelling</li>
-            <li>Dedicated login route with a branded sign-in layout</li>
-            <li>Daily roadmap preserved for incremental commits</li>
+            {proofPoints.map((point) => (
+              <li key={point}>{point}</li>
+            ))}
           </ul>
         </section>
 
-        <section className="roadmap-section" id="roadmap">
+        <section className="roadmap-section" id="case-study">
           <div className="section-heading compact">
             <div>
-              <p className="eyebrow">Daily evolution</p>
-              <h3>Suggested backlog for the automatic daily commits.</h3>
+              <p className="eyebrow">Case study breakdown</p>
+              <h3>A clearer story for reviewers, recruiters and clients.</h3>
             </div>
           </div>
 
           <div className="roadmap-grid">
-            {milestones.map((milestone) => (
-              <article className="roadmap-card" key={milestone}>
+            {caseStudyBlocks.map((block) => (
+              <article className="roadmap-card" key={block.title}>
                 <span className="roadmap-dot" aria-hidden="true" />
-                <p>{milestone}</p>
+                <div>
+                  <p className="eyebrow small-eyebrow">{block.eyebrow}</p>
+                  <strong>{block.title}</strong>
+                  <p>{block.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="portfolio-section">
+          <div className="section-heading compact">
+            <div>
+              <p className="eyebrow">Project facts</p>
+              <h3>
+                Compact details that help the work read like a shipped concept.
+              </h3>
+            </div>
+          </div>
+
+          <div className="portfolio-grid">
+            {portfolioFacts.map((fact) => (
+              <article className="portfolio-card" key={fact.label}>
+                <span>{fact.label}</span>
+                <strong>{fact.value}</strong>
               </article>
             ))}
           </div>
@@ -440,14 +493,15 @@ function LoginPage() {
 
       <main className="login-layout">
         <section className="login-hero">
-          <p className="eyebrow">Premium access</p>
+          <p className="eyebrow">Sign-in concept</p>
           <h2>
-            Log in to keep your mixes, recommendations and premium picks moving.
+            Sign in to continue a premium listening journey with a cleaner
+            conversion touchpoint.
           </h2>
           <p>
-            This second page makes the clone feel closer to a real streaming
-            product by adding a sign-in experience with supporting benefit
-            messaging.
+            This route gives the project a more complete portfolio shape by
+            showing how the landing page hands off into a branded authentication
+            surface.
           </p>
 
           <ul className="login-benefits">
@@ -468,7 +522,7 @@ function LoginPage() {
             </div>
             <div>
               <p className="eyebrow">Welcome back</p>
-              <h1>Sign in to Pulse</h1>
+              <h1>Continue to Pulse</h1>
             </div>
           </div>
 
@@ -507,8 +561,8 @@ function LoginPage() {
           </div>
 
           <p className="login-note">
-            By continuing, you agree to the premium demo flow and product-design
-            experiment.
+            This screen is intentionally scoped as part of a frontend portfolio
+            concept focused on premium conversion.
           </p>
         </section>
       </main>
