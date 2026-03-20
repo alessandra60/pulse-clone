@@ -5,6 +5,7 @@ TORONTO_DATE="$(TZ="America/Toronto" date +%F)"
 TORONTO_HOUR="$(TZ="America/Toronto" date +%H)"
 STAMP="$(TZ="America/Toronto" date +"%Y-%m-%d %I:%M:%S %p America/Toronto")"
 TOTAL_UPDATES="$(grep -c "Last automated update:" daily-log.md || true)"
+TRIGGER_EVENT="${GITHUB_EVENT_NAME:-schedule}"
 
 ROADMAP=(
   "Refine the hero spacing and balance the typography."
@@ -26,7 +27,7 @@ ROADMAP=(
 NEXT_INDEX=$((TOTAL_UPDATES % ${#ROADMAP[@]}))
 NEXT_FOCUS="${ROADMAP[$NEXT_INDEX]}"
 
-if [ "${TORONTO_HOUR}" != "09" ]; then
+if [ "${TRIGGER_EVENT}" != "workflow_dispatch" ] && [ "${TORONTO_HOUR}" != "09" ]; then
   exit 0
 fi
 
