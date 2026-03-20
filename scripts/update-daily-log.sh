@@ -6,6 +6,7 @@ TORONTO_HOUR="$(TZ="America/Toronto" date +%H)"
 STAMP="$(TZ="America/Toronto" date +"%Y-%m-%d %I:%M:%S %p America/Toronto")"
 TOTAL_UPDATES="$(grep -c "Last automated update:" daily-log.md || true)"
 TRIGGER_EVENT="${GITHUB_EVENT_NAME:-schedule}"
+COMMIT_MESSAGE_FILE=".daily-commit-message.txt"
 
 ROADMAP=(
   "Refine the hero spacing and balance the typography."
@@ -24,8 +25,26 @@ ROADMAP=(
   "Review performance and bundle size."
 )
 
+ENTRY_INTROS=(
+  "Checked in a short progress note for the project today."
+  "Captured today's progress snapshot for the case study."
+  "Added a daily update to keep the project history moving."
+  "Recorded today's project note to keep the worklog current."
+  "Saved a quick progress entry for the current iteration."
+)
+
+COMMIT_MESSAGES=(
+  "docs: record daily project note"
+  "docs: update progress journal"
+  "docs: capture today's project snapshot"
+  "docs: log daily progress note"
+  "docs: note the next project focus"
+)
+
 NEXT_INDEX=$((TOTAL_UPDATES % ${#ROADMAP[@]}))
 NEXT_FOCUS="${ROADMAP[$NEXT_INDEX]}"
+ENTRY_INTRO="${ENTRY_INTROS[$((TOTAL_UPDATES % ${#ENTRY_INTROS[@]}))]}"
+COMMIT_MESSAGE="${COMMIT_MESSAGES[$((TOTAL_UPDATES % ${#COMMIT_MESSAGES[@]}))]}"
 
 if [ "${TRIGGER_EVENT}" != "workflow_dispatch" ] && [ "${TORONTO_HOUR}" != "09" ]; then
   exit 0
@@ -35,9 +54,12 @@ if grep -q "Last automated update: ${TORONTO_DATE}" daily-log.md; then
   exit 0
 fi
 
+printf '%s\n' "${COMMIT_MESSAGE}" > "${COMMIT_MESSAGE_FILE}"
+
 {
   echo ""
   echo "- Last automated update: ${TORONTO_DATE}"
-  echo "- Workflow timestamp: ${STAMP}"
-  echo "- Suggested next focus: ${NEXT_FOCUS}"
+  echo "- Daily note: ${ENTRY_INTRO}"
+  echo "- Logged at: ${STAMP}"
+  echo "- Next focus: ${NEXT_FOCUS}"
 } >> daily-log.md
