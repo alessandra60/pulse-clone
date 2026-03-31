@@ -61,3 +61,8 @@ This file is updated automatically by GitHub Actions.
 - Daily note: Captured today's progress snapshot for the case study.
 - Logged at: 2026-03-30 09:39:23 AM America/Toronto
 - Next focus: Add a second theme direction for experimentation.
+
+- Last automated update: 2026-03-31
+- Daily note: Added a daily update to keep the project history moving.
+- Logged at: 2026-03-31 09:39:43 AM America/Toronto
+- Next focus: Polish footer and social links.
