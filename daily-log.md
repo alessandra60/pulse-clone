@@ -206,3 +206,8 @@ This file is updated automatically by GitHub Actions.
 - Daily note: Checked in a short progress note for the project today.
 - Logged at: 2026-04-28 09:43:09 AM America/Toronto
 - Next focus: Polish footer and social links.
+
+- Last automated update: 2026-04-29
+- Daily note: Captured today's progress snapshot for the case study.
+- Logged at: 2026-04-29 09:40:47 AM America/Toronto
+- Next focus: Review performance and bundle size.
