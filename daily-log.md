@@ -216,3 +216,8 @@ This file is updated automatically by GitHub Actions.
 - Daily note: Added a daily update to keep the project history moving.
 - Logged at: 2026-04-30 09:41:16 AM America/Toronto
 - Next focus: Refine the hero spacing and balance the typography.
+
+- Last automated update: 2026-05-01
+- Daily note: Recorded today's project note to keep the worklog current.
+- Logged at: 2026-05-01 09:36:11 AM America/Toronto
+- Next focus: Add a real mobile navigation overlay.
