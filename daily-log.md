@@ -231,3 +231,8 @@ This file is updated automatically by GitHub Actions.
 - Daily note: Checked in a short progress note for the project today.
 - Logged at: 2026-05-03 09:36:23 AM America/Toronto
 - Next focus: Add subtle scroll reveals for cards and sections.
+
+- Last automated update: 2026-05-04
+- Daily note: Captured today's progress snapshot for the case study.
+- Logged at: 2026-05-04 09:43:25 AM America/Toronto
+- Next focus: Improve keyboard support for category chips.
