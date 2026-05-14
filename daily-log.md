@@ -281,3 +281,8 @@ This file is updated automatically by GitHub Actions.
 - Daily note: Checked in a short progress note for the project today.
 - Logged at: 2026-05-13 09:49:28 AM America/Toronto
 - Next focus: Review performance and bundle size.
+
+- Last automated update: 2026-05-14
+- Daily note: Captured today's progress snapshot for the case study.
+- Logged at: 2026-05-14 09:42:42 AM America/Toronto
+- Next focus: Refine the hero spacing and balance the typography.
