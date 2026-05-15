@@ -286,3 +286,8 @@ This file is updated automatically by GitHub Actions.
 - Daily note: Captured today's progress snapshot for the case study.
 - Logged at: 2026-05-14 09:42:42 AM America/Toronto
 - Next focus: Refine the hero spacing and balance the typography.
+
+- Last automated update: 2026-05-15
+- Daily note: Added a daily update to keep the project history moving.
+- Logged at: 2026-05-15 09:40:41 AM America/Toronto
+- Next focus: Add a real mobile navigation overlay.
