@@ -306,3 +306,8 @@ This file is updated automatically by GitHub Actions.
 - Daily note: Checked in a short progress note for the project today.
 - Logged at: 2026-05-20 09:58:06 AM America/Toronto
 - Next focus: Improve keyboard support for category chips.
+
+- Last automated update: 2026-05-22
+- Daily note: Captured today's progress snapshot for the case study.
+- Logged at: 2026-05-22 09:51:38 AM America/Toronto
+- Next focus: Add a playlist details drawer.
