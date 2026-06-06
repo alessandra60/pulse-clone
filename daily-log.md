@@ -331,3 +331,8 @@ This file is updated automatically by GitHub Actions.
 - Daily note: Checked in a short progress note for the project today.
 - Logged at: 2026-05-31 09:38:02 AM America/Toronto
 - Next focus: Add loading skeletons and empty states.
+
+- Last automated update: 2026-06-06
+- Daily note: Captured today's progress snapshot for the case study.
+- Logged at: 2026-06-06 09:37:39 AM America/Toronto
+- Next focus: Improve accessibility labels and color contrast.
