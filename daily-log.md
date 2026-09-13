@@ -756,3 +756,8 @@ This file is updated automatically by GitHub Actions.
 - Daily note: Checked in a short progress note for the project today.
 - Logged at: 2026-09-12 09:14:09 AM America/Toronto
 - Next focus: Improve accessibility labels and color contrast.
+
+- Last automated update: 2026-09-13
+- Daily note: Captured today's progress snapshot for the case study.
+- Logged at: 2026-09-13 09:14:24 AM America/Toronto
+- Next focus: Add a second theme direction for experimentation.
