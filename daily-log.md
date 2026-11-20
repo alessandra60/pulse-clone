@@ -1081,3 +1081,8 @@ This file is updated automatically by GitHub Actions.
 - Daily note: Checked in a short progress note for the project today.
 - Logged at: 2026-11-19 09:11:19 AM America/Toronto
 - Next focus: Add a playlist details drawer.
+
+- Last automated update: 2026-11-20
+- Daily note: Captured today's progress snapshot for the case study.
+- Logged at: 2026-11-20 09:11:02 AM America/Toronto
+- Next focus: Create a pricing or premium comparison section.
